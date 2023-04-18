@@ -52,7 +52,7 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -61,8 +61,8 @@ button {
 
 :root {
   --accent-color: #404bbf;
-  --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
 }
@@ -82,7 +82,6 @@ body {
 .page-header-container {
   display: flex;
   align-items: center;
-  
 }
 
 .navigation {
@@ -193,7 +192,13 @@ body {
 
 /* =============HERO============= */
 .hero {
-  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -249,6 +254,17 @@ body {
 }
 
 /* =============Features============= */
+
+.advantages-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 
 .advantages-list {
   display: flex;
@@ -357,6 +373,57 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+/* ===============Customers=============== */
+
+.customers-section {
+  padding: 100px 156px;
+}
+
+.customers-title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 /* =================PORTFOLIO================= */
@@ -382,7 +449,7 @@ body {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
