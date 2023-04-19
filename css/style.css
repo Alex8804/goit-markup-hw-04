@@ -121,18 +121,6 @@ body {
   gap: 40px;
 }
 
-.menu-item::after {
-  content: '';
-  background: #404bbf;
-  border-radius: 2px;
-  height: 4px;
-  margin-top: 20px;
-}
-
-.menu-item:hover::after {
-  display: block;
-}
-
 .contacts-list {
   display: flex;
   align-items: center;
